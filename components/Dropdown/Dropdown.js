@@ -2,7 +2,7 @@ class Dropdown {
   constructor(element) {
     
     // Assign this.element to the dropdown element
-    this.element = element;
+    this.element = document.querySelector('.dropdown');
     // console.log(dropdown);
     // Get the element with the ".dropdown-button" class found in the dropdown element (look at the HTML for context)
     this.button = document.querySelector('.dropdown-button');
@@ -16,9 +16,7 @@ class Dropdown {
 
   toggleContent() {
       // Toggle the ".dropdown-hidden" class off and on
-      this.button.classList.toggle('dropdown-hidden');
-      this.content.classList.toggle('dropdown-content');
-
+      this.content.classList.toggle('dropdown-hidden');
   }
 }
 
